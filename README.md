@@ -1,2 +1,2 @@
 # adixon304.github.io
-Personal Website
+Alex Dixon's personal website.

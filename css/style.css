@@ -1,0 +1,17 @@
+body {
+    background-color: #588157;
+    font-family: Helvetica;
+    color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  place-items: center; /* Centers both horizontally and vertically */
+  height: 100vh;       /* Sets height to full viewport height for page centering */
+}
+
+.column {
+  padding: 2em;
+}
