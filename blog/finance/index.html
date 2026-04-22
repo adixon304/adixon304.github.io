@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Blog
+title: Finance
 body_class: blog-page
 ---
 <div class="blog">
   <div class="blog-posts">
-    <h1>Blog</h1>
-    {% if site.posts.size > 0 %}
-      {% for post in site.posts %}
+    <h1>Finance</h1>
+    {% assign finance_posts = site.posts | where_exp: "post", "post.tags contains 'finance'" %}
+    {% if finance_posts.size > 0 %}
+      {% for post in finance_posts %}
       <div class="post-item">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         <time>{{ post.date | date: "%B %-d, %Y" }}</time>
@@ -20,8 +21,8 @@ body_class: blog-page
   </div>
 
   <aside class="blog-filter">
-    <a href="/blog" class="filter-link active">All</a>
+    <a href="/blog" class="filter-link">All</a>
     <a href="/blog/cooking" class="filter-link">Cooking</a>
-    <a href="/blog/finance" class="filter-link">Finance</a>
+    <a href="/blog/finance" class="filter-link active">Finance</a>
   </aside>
 </div>

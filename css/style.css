@@ -79,7 +79,7 @@ nav a:hover {
 
 /* Main content (non-hero pages) */
 main {
-  max-width: 680px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 8rem 2.5rem 4rem;
 }
@@ -91,10 +91,6 @@ body.home {
 body.home main {
   padding: 0;
   max-width: none;
-}
-
-body.blog-page main {
-  max-width: 880px;
 }
 
 a {
@@ -122,23 +118,20 @@ p {
   padding-top: 5.5rem;
 }
 
-.filter-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
+.filter-link {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.88rem;
   color: #aaa;
-  text-align: left;
+  text-decoration: none;
   padding: 0.3rem 0;
   letter-spacing: 0.02em;
 }
 
-.filter-btn:hover {
+.filter-link:hover {
   color: #1a1a1a;
 }
 
-.filter-btn.active {
+.filter-link.active {
   color: #588157;
   font-weight: bold;
 }
