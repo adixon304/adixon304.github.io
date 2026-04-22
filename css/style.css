@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f7f7f5;
+  background-color: #fafafa;
   font-family: Georgia, serif;
   color: #1a1a1a;
   line-height: 1.7;
@@ -67,21 +67,14 @@ nav a:hover {
   line-height: 1.1;
 }
 
-.hero .role {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.1rem;
-  color: #588157;
-  margin-bottom: 1.5rem;
-}
-
-.hero .role a {
-  color: #588157;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  max-width: 560px;
-  color: #555;
+.hero .tagline {
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 300;
+  color: #4a7a45;
+  font-style: italic;
+  max-width: 640px;
+  line-height: 1.4;
+  margin-top: 0.5rem;
 }
 
 /* Main content (non-hero pages) */
@@ -100,6 +93,10 @@ body.home main {
   max-width: none;
 }
 
+body.blog-page main {
+  max-width: 880px;
+}
+
 a {
   color: #588157;
 }
@@ -108,11 +105,58 @@ p {
   margin-bottom: 1rem;
 }
 
+/* Blog two-column layout */
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.blog-filter {
+  position: sticky;
+  top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding-top: 5.5rem;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.88rem;
+  color: #aaa;
+  text-align: left;
+  padding: 0.3rem 0;
+  letter-spacing: 0.02em;
+}
+
+.filter-btn:hover {
+  color: #1a1a1a;
+}
+
+.filter-btn.active {
+  color: #588157;
+  font-weight: bold;
+}
+
 /* About */
 .about h1 {
   font-size: 2.5rem;
   color: #588157;
   margin-bottom: 2.5rem;
+}
+
+.about h2 {
+  font-size: 1.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
 }
 
 .about p {
@@ -123,7 +167,8 @@ p {
 }
 
 /* Blog */
-.blog h1 {
+.blog h1,
+.blog-posts h1 {
   font-size: 2.5rem;
   color: #588157;
   margin-bottom: 2.5rem;
@@ -200,6 +245,59 @@ p {
 
 .back-link:hover {
   text-decoration: underline;
+}
+
+/* Recipe */
+.recipe .recipe-meta {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.recipe .recipe-meta span,
+.recipe .recipe-meta time {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  color: #aaa;
+}
+
+.recipe-ingredients,
+.recipe-steps {
+  margin-top: 2rem;
+}
+
+.recipe-ingredients h2,
+.recipe-steps h2 {
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+.recipe-ingredients ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-ingredients li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #e6e6e4;
+  font-size: 1rem;
+  color: #2c2c2c;
+}
+
+.recipe-ingredients li:first-child {
+  border-top: 1px solid #e6e6e4;
+}
+
+.recipe-steps p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #2c2c2c;
+  counter-increment: step;
 }
 
 @media (max-width: 600px) {

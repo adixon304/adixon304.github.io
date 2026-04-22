@@ -1,18 +1,43 @@
 ---
 layout: default
 title: Blog
+body_class: blog-page
 ---
 <div class="blog">
-  <h1>Blog</h1>
-  {% if site.posts.size > 0 %}
-    {% for post in site.posts %}
-    <div class="post-item">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <time>{{ post.date | date: "%B %-d, %Y" }}</time>
-      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    </div>
-    {% endfor %}
-  {% else %}
-    <p>Nothing here yet — check back soon.</p>
-  {% endif %}
+  <div class="blog-posts">
+    <h1>Blog</h1>
+    {% if site.posts.size > 0 %}
+      {% for post in site.posts %}
+      <div class="post-item" data-tags="{{ post.tags | join: ' ' }}">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    {% else %}
+      <p>Nothing here yet — check back soon.</p>
+    {% endif %}
+  </div>
+
+  <aside class="blog-filter">
+    <button class="filter-btn active" data-tag="all">All</button>
+    <button class="filter-btn" data-tag="cooking">Cooking</button>
+    <button class="filter-btn" data-tag="finance">Finance</button>
+  </aside>
 </div>
+
+<script>
+  var buttons = document.querySelectorAll('.filter-btn');
+  var items   = document.querySelectorAll('.post-item');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var tag = btn.dataset.tag;
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      items.forEach(function(item) {
+        var tags = (item.dataset.tags || '').split(' ');
+        item.style.display = (tag === 'all' || tags.indexOf(tag) !== -1) ? '' : 'none';
+      });
+    });
+  });
+</script>

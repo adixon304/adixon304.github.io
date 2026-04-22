@@ -1,0 +1,21 @@
+---
+layout: default
+title: Personal Finance
+---
+<div class="blog">
+  <h1>Personal Finance</h1>
+  {% assign finance_posts = site.posts | where_exp: "post", "post.tags contains 'finance'" %}
+  {% if finance_posts.size > 0 %}
+    {% for post in finance_posts %}
+    <div class="post-item">
+      <div class="post-item-header">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </div>
+      <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  {% else %}
+    <p>Nothing here yet — check back soon.</p>
+  {% endif %}
+</div>

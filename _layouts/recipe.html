@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="post recipe">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <div class="recipe-meta">
+      {% if page.serves %}<span>Serves {{ page.serves }}</span>{% endif %}
+      {% if page.time %}<span>{{ page.time }}</span>{% endif %}
+      <time>{{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+  </header>
+
+  {% if page.ingredients %}
+  <section class="recipe-ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      {% for item in page.ingredients %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section class="recipe-steps">
+    <h2>Steps</h2>
+    {{ content }}
+  </section>
+
+  <a href="{{ '/blog' | relative_url }}" class="back-link">← Blog</a>
+</article>
