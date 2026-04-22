@@ -1,4 +1,9 @@
 <nav>
-  <a href="{{ '/' | relative_url }}" class="nav-title">Alex Dixon</a>
-  <a href="{{ '/writing' | relative_url }}">Writing</a>
+  <a href="{{ '/' | relative_url }}" class="nav-logo">
+    <img src="{{ '/images/logo.png' | relative_url }}" alt="Alex Dixon">
+  </a>
+  <div class="nav-links">
+    <a href="{{ '/about' | relative_url }}">About</a>
+    <a href="{{ '/blog' | relative_url }}">Blog</a>
+  </div>
 </nav>
