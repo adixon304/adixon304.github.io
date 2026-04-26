@@ -6,6 +6,9 @@ tags: [cooking, recipe]
 description: "Crisp on the outside, cloud-like on the inside — the secret is whipped egg whites folded in at the end."
 serves: "4–6 waffles"
 time: "~30 minutes"
+cuisine: American
+meal_type: Breakfast
+dietary: [Vegetarian, Quick]
 ingredients:
   - 2 cups all-purpose flour
   - 1 tbsp baking powder

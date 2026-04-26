@@ -2,10 +2,13 @@
 layout: recipe
 title: "Braised Short Ribs"
 date: 2026-04-21
-tags: [cooking]
+tags: [cooking, recipe]
 description: "Rich, fall-off-the-bone short ribs braised in red wine. The kind of dish that makes the whole house smell good."
 serves: 4
 time: "3.5 hours"
+cuisine: American
+meal_type: Dinner
+dietary: []
 ingredients:
   - 3 lbs bone-in beef short ribs
   - Kosher salt and black pepper

@@ -9,6 +9,11 @@ layout: default
       {% if page.time %}<span>{{ page.time }}</span>{% endif %}
       <time>{{ page.date | date: "%B %-d, %Y" }}</time>
     </div>
+    <div class="recipe-tags">
+      {% if page.cuisine %}<span class="tag tag-cuisine">{{ page.cuisine }}</span>{% endif %}
+      {% if page.meal_type %}<span class="tag tag-meal">{{ page.meal_type }}</span>{% endif %}
+      {% for d in page.dietary %}<span class="tag tag-dietary">{{ d }}</span>{% endfor %}
+    </div>
   </header>
 
   {% if page.ingredient_groups %}
@@ -39,5 +44,5 @@ layout: default
     {{ content }}
   </section>
 
-  <a href="{{ '/blog' | relative_url }}" class="back-link">← Blog</a>
+  <a href="{{ '/cooking' | relative_url }}" class="back-link">← Recipes</a>
 </article>

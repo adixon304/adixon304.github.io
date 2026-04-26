@@ -1,21 +1,115 @@
 ---
 layout: default
-title: Cooking
+title: Recipes
+body_class: recipes-page
 ---
-<div class="blog">
-  <h1>Cooking</h1>
-  {% assign cooking_posts = site.posts | where_exp: "post", "post.tags contains 'cooking'" %}
-  {% if cooking_posts.size > 0 %}
-    {% for post in cooking_posts %}
-    <div class="post-item">
-      <div class="post-item-header">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </div>
-      <time>{{ post.date | date: "%B %-d, %Y" }}</time>
-      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    </div>
-    {% endfor %}
-  {% else %}
-    <p>Nothing here yet — check back soon.</p>
-  {% endif %}
+<div class="recipes-header">
+  <h1>Recipes</h1>
 </div>
+
+<div class="recipes-controls">
+  <input type="text" id="recipe-search" class="recipe-search" placeholder="Search recipes…" autocomplete="off">
+  <div class="recipe-filters">
+    <select id="filter-cuisine" class="filter-select">
+      <option value="">All Cuisines</option>
+      <option>American</option>
+      <option>Belgian</option>
+      <option>French</option>
+      <option>Indian</option>
+      <option>Italian</option>
+      <option>Japanese</option>
+      <option>Mediterranean</option>
+      <option>Mexican</option>
+      <option>Other</option>
+    </select>
+    <select id="filter-meal" class="filter-select">
+      <option value="">All Meal Types</option>
+      <option>Breakfast</option>
+      <option>Lunch</option>
+      <option>Dinner</option>
+      <option>Snack</option>
+      <option>Dessert</option>
+      <option>Baking</option>
+      <option>Drink</option>
+    </select>
+    <select id="filter-dietary" class="filter-select">
+      <option value="">All Dietary</option>
+      <option>Vegetarian</option>
+      <option>Vegan</option>
+      <option>Gluten-Free</option>
+      <option>Dairy-Free</option>
+      <option>Quick</option>
+      <option>Make-Ahead</option>
+    </select>
+  </div>
+</div>
+
+<div id="recipe-list" class="recipe-list">
+  {% for post in site.posts %}
+  <div class="recipe-card"
+    data-title="{{ post.title | downcase }}"
+    data-cuisine="{{ post.cuisine | default: '' | downcase }}"
+    data-meal="{{ post.meal_type | default: '' | downcase }}"
+    data-dietary="{% for d in post.dietary %}{{ d | downcase }},{% endfor %}">
+    <a href="{{ post.url | relative_url }}" class="recipe-card-link">
+      <div class="recipe-card-body">
+        <h2>{{ post.title }}</h2>
+        {% if post.description %}<p class="recipe-card-desc">{{ post.description }}</p>{% endif %}
+        <div class="recipe-card-meta">
+          {% if post.serves %}<span>Serves {{ post.serves }}</span>{% endif %}
+          {% if post.time %}<span>{{ post.time }}</span>{% endif %}
+        </div>
+        <div class="recipe-card-tags">
+          {% if post.cuisine %}<span class="tag tag-cuisine">{{ post.cuisine }}</span>{% endif %}
+          {% if post.meal_type %}<span class="tag tag-meal">{{ post.meal_type }}</span>{% endif %}
+          {% for d in post.dietary %}<span class="tag tag-dietary">{{ d }}</span>{% endfor %}
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<p id="no-results" class="no-results" style="display:none;">No recipes match your filters. Try broadening your search.</p>
+
+<script>
+(function() {
+  var search = document.getElementById('recipe-search');
+  var filterCuisine = document.getElementById('filter-cuisine');
+  var filterMeal = document.getElementById('filter-meal');
+  var filterDietary = document.getElementById('filter-dietary');
+  var cards = document.querySelectorAll('.recipe-card');
+  var noResults = document.getElementById('no-results');
+
+  function applyFilters() {
+    var q = search.value.toLowerCase().trim();
+    var cuisine = filterCuisine.value.toLowerCase();
+    var meal = filterMeal.value.toLowerCase();
+    var dietary = filterDietary.value.toLowerCase();
+    var visible = 0;
+
+    cards.forEach(function(card) {
+      var title = card.dataset.title || '';
+      var cardCuisine = card.dataset.cuisine || '';
+      var cardMeal = card.dataset.meal || '';
+      var cardDietary = card.dataset.dietary || '';
+
+      var match = true;
+      if (q && title.indexOf(q) === -1) match = false;
+      if (cuisine && cardCuisine !== cuisine) match = false;
+      if (meal && cardMeal !== meal) match = false;
+      if (dietary && cardDietary.indexOf(dietary) === -1) match = false;
+
+      card.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+
+    noResults.style.display = visible === 0 ? '' : 'none';
+  }
+
+  search.addEventListener('input', applyFilters);
+  filterCuisine.addEventListener('change', applyFilters);
+  filterMeal.addEventListener('change', applyFilters);
+  filterDietary.addEventListener('change', applyFilters);
+})();
+</script>

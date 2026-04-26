@@ -6,6 +6,9 @@ tags: [cooking, recipe]
 description: "A classic North Indian recipe with tandoor-style marinated chicken in a rich, velvety tomato-cream sauce. Mild, aromatic, and deeply flavorful — with an extra-generous sauce."
 serves: 4
 time: "45 min + 2 hrs marinating"
+cuisine: Indian
+meal_type: Dinner
+dietary: []
 ingredient_groups:
   - name: Marinade
     items:

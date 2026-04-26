@@ -6,6 +6,9 @@ tags: [cooking, recipe]
 description: "A two-day poolish method that builds complex flavor and an airy, open crumb. Makes 3 twelve-inch or 2 sixteen-inch pizzas."
 serves: "3 × 12\" pizzas or 2 × 16\" pizzas"
 time: "2 days"
+cuisine: Italian
+meal_type: Dinner
+dietary: [Vegetarian, Make-Ahead]
 ingredient_groups:
   - name: Poolish
     items:
