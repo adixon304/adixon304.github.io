@@ -394,14 +394,35 @@ footer a:hover {
 }
 
 .form-success {
+  display: none;
+  position: relative;
+  max-width: 520px;
   background: #dcfce7;
   color: #15803d;
   border-radius: 5px;
-  padding: 0.85rem 1rem;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.92rem;
   margin-bottom: 1.5rem;
-  display: none;
+}
+
+.form-success-close {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #15803d;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.6;
+}
+
+.form-success-close:hover {
+  opacity: 1;
 }
 
 .form-error {
