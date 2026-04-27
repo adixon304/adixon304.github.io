@@ -1,6 +1,38 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": "Alex Dixon"
+  },
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "recipeYield": {{ page.serves | jsonify }},
+  "totalTime": {{ page.time | jsonify }},
+  {% if page.cuisine %}"recipeCuisine": {{ page.cuisine | jsonify }},{% endif %}
+  {% if page.meal_type %}"recipeCategory": {{ page.meal_type | jsonify }},{% endif %}
+  "recipeIngredient": [
+    {% if page.ingredient_groups %}
+      {% for group in page.ingredient_groups %}
+        {% for item in group.items %}
+          {{ item | jsonify }}{% unless forloop.last and forloop.parentloop.last %},{% endunless %}
+        {% endfor %}
+      {% endfor %}
+    {% elsif page.ingredients %}
+      {% for item in page.ingredients %}
+        {{ item | jsonify }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endif %}
+  ],
+  "url": "{{ page.url | prepend: site.url }}"
+}
+</script>
+
 <article class="post recipe">
   <header>
     <h1>{{ page.title }}</h1>
