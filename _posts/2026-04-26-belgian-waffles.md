@@ -3,7 +3,7 @@ layout: recipe
 title: "Light & Fluffy Belgian Waffles"
 date: 2026-04-26
 tags: [cooking, recipe]
-description: "Crisp on the outside, cloud-like on the inside — the secret is whipped egg whites folded in at the end."
+description: "Crisp on the outside, cloud-like on the inside. The secret is whipped egg whites folded in at the end."
 serves: "4–6 waffles"
 time: "~30 minutes"
 cuisine: American
@@ -26,7 +26,7 @@ Mix dry ingredients: whisk together flour, baking powder, sugar, and salt in a l
 
 Mix wet ingredients: whisk egg yolks, milk, melted butter, and vanilla in a separate bowl until combined.
 
-Combine wet and dry: pour wet into dry and stir until just combined. A few lumps are fine — don't overmix.
+Combine wet and dry: pour wet into dry and stir until just combined. A few lumps are fine. Don't overmix.
 
 Whip egg whites: beat reserved egg whites on high speed until stiff peaks form, about 2–3 minutes.
 
@@ -34,7 +34,7 @@ Fold in whites: gently fold whipped egg whites into the batter in two additions 
 
 Cook waffles: grease iron lightly, pour about ¾ cup batter per waffle, cook until golden and steam slows, about 4–5 minutes.
 
-Keep warm & serve: place finished waffles on the rack of a 200°F oven to keep warm and crispy. Never stack them — they'll steam and go soggy.
+Keep warm & serve: place finished waffles on the rack of a 200°F oven to keep warm and crispy. Never stack them. They'll steam and go soggy.
 
 ---
 
@@ -42,4 +42,4 @@ Keep warm & serve: place finished waffles on the rack of a 200°F oven to keep w
 
 **Make ahead:** Separate the eggs and mix the dry ingredients the night before to speed up morning prep.
 
-**Leftovers:** Waffles freeze well — reheat in a toaster for crispy results.
+**Leftovers:** Waffles freeze well. Reheat in a toaster for crispy results.

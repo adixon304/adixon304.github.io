@@ -49,6 +49,12 @@ nav a:hover {
   opacity: 0.75;
 }
 
+nav a.nav-active {
+  opacity: 1;
+  border-bottom: 2px solid rgba(255,255,255,0.7);
+  padding-bottom: 2px;
+}
+
 /* Hero */
 .hero {
   height: 100vh;
@@ -291,6 +297,31 @@ p {
   line-height: 1.85;
   color: #2c2c2c;
   counter-increment: step;
+}
+
+/* 404 */
+.not-found {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 5rem;
+  color: #e6e6e4;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.not-found a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
 }
 
 /* Footer */

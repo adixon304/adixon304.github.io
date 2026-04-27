@@ -3,8 +3,8 @@
     <img src="{{ '/images/logo.png' | relative_url }}" alt="Alex Dixon">
   </a>
   <div class="nav-links">
-    <a href="{{ '/about' | relative_url }}">About</a>
-    <a href="{{ '/cooking' | relative_url }}">Recipes</a>
-    <a href="{{ '/contact' | relative_url }}">Contact</a>
+    <a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="nav-active"{% endif %}>About</a>
+    <a href="{{ '/cooking' | relative_url }}" {% if page.url contains 'cooking' %}class="nav-active"{% endif %}>Recipes</a>
+    <a href="{{ '/contact' | relative_url }}" {% if page.url contains 'contact' %}class="nav-active"{% endif %}>Contact</a>
   </div>
 </nav>
