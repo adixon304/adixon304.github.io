@@ -632,7 +632,19 @@ footer a:hover {
 
 @media (max-width: 600px) {
   nav {
-    padding: 0.85rem 1.5rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .nav-logo img {
+    height: 52px;
+  }
+
+  .nav-links {
+    gap: 1.1rem;
+  }
+
+  nav a {
+    font-size: 0.82rem;
   }
 
   .hero {
@@ -644,6 +656,98 @@ footer a:hover {
   }
 
   main {
-    padding: 9rem 1.5rem 3rem;
+    padding: 8rem 1.25rem 3rem;
+  }
+
+  .recipe-filters {
+    flex-direction: column;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+
+  .recipe-card-tags {
+    gap: 0.3rem;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .form-success {
+    max-width: 100%;
+  }
+}
+
+@media print {
+  nav,
+  footer,
+  .recipes-controls,
+  .recipe-tags,
+  .back-link,
+  .recipe-card-tags,
+  script {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .post.recipe header {
+    border-bottom: 1pt solid #ccc;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .post.recipe header h1 {
+    font-size: 18pt;
+  }
+
+  .recipe-meta span,
+  .recipe-meta time {
+    font-size: 9pt;
+    color: #555;
+  }
+
+  .recipe-ingredients h2,
+  .recipe-steps h2 {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #555;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .recipe-ingredients h3 {
+    font-size: 10pt;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .recipe-ingredients li {
+    padding: 0.2rem 0;
+    border-bottom: 0.5pt solid #ddd;
+    font-size: 10pt;
+  }
+
+  .recipe-steps p {
+    font-size: 10.5pt;
+    margin-bottom: 0.75rem;
+  }
+
+  a[href]::after {
+    content: none;
   }
 }
