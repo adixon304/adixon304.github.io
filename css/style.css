@@ -293,6 +293,130 @@ p {
   counter-increment: step;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2.5rem 2.5rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  color: #aaa;
+  border-top: 1px solid #e6e6e4;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #588157;
+}
+
+.footer-sep {
+  margin: 0 0.6rem;
+}
+
+/* Contact page */
+.contact-page h1 {
+  font-size: 2.5rem;
+  color: #588157;
+  margin-bottom: 1rem;
+}
+
+.contact-page > p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 520px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  color: #1a1a1a;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.6rem 0.8rem;
+  outline: none;
+  transition: border-color 0.15s;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #588157;
+}
+
+.contact-form button[type="submit"] {
+  align-self: flex-start;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  background: #588157;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.65rem 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.contact-form button[type="submit"]:hover {
+  opacity: 0.85;
+}
+
+.contact-form button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-success {
+  background: #dcfce7;
+  color: #15803d;
+  border-radius: 5px;
+  padding: 0.85rem 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.92rem;
+  margin-bottom: 1.5rem;
+  display: none;
+}
+
+.form-error {
+  color: #b91c1c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.88rem;
+  margin-bottom: 0.5rem;
+}
+
+.field-error {
+  color: #b91c1c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+}
+
 /* Tag pills */
 .tag {
   display: inline-block;
