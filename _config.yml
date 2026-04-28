@@ -2,3 +2,6 @@ title: Alex Dixon
 description: Engineering leader at Stripe.
 url: https://alexdixon.me
 baseurl: ""
+
+plugins:
+  - jekyll-sitemap
