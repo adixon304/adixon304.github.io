@@ -8,6 +8,36 @@ description: "Recipes from Alex Dixon's kitchen. Smoked meats, Italian classics,
   <h1>Recipes</h1>
 </div>
 
+<div class="recipes-featured">
+  {% for post in site.posts limit:3 %}
+  <a href="{{ post.url | relative_url }}" class="featured-card">
+    <div class="featured-card-image">
+      {% if post.image %}
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+      {% else %}
+        <div class="featured-card-placeholder"></div>
+      {% endif %}
+    </div>
+    <div class="featured-card-body">
+      <div class="featured-card-tags">
+        {% if post.cuisine %}<span class="tag tag-cuisine">{{ post.cuisine }}</span>{% endif %}
+        {% if post.meal_type %}<span class="tag tag-meal">{{ post.meal_type }}</span>{% endif %}
+      </div>
+      <h2>{{ post.title }}</h2>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+      <div class="featured-card-meta">
+        {% if post.time %}<span>{{ post.time }}</span>{% endif %}
+        {% if post.serves %}<span>Serves {{ post.serves }}</span>{% endif %}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<div class="recipes-all-header">
+  <h2>All Recipes</h2>
+</div>
+
 <div class="recipes-controls">
   <input type="text" id="recipe-search" class="recipe-search" placeholder="Search recipes…" autocomplete="off">
   <div class="recipe-filters">
