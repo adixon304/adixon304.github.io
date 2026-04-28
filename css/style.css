@@ -657,9 +657,9 @@ footer a:hover {
 
   .about-photo {
     float: none;
-    margin: 0 auto 1.5rem;
-    display: block;
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1.5rem 0;
   }
 
   .about-photo img {
