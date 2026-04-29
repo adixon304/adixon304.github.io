@@ -90,7 +90,9 @@ nav a.nav-active {
 }
 
 .hero-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.95rem;
   letter-spacing: 0.03em;
@@ -100,6 +102,12 @@ nav a.nav-active {
   background-color: #588157;
   color: #fff;
   transition: opacity 0.15s;
+}
+
+.hero-btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .hero-btn:hover {
@@ -480,6 +488,13 @@ footer a:hover {
 
 .footer-sep {
   margin: 0 0.6rem;
+}
+
+.footer-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 /* Contact page */
