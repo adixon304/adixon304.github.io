@@ -35,6 +35,10 @@ layout: default
 
 <article class="post recipe">
   <header>
+    <a href="{{ '/recipes' | relative_url }}" class="recipe-back-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Recipes
+    </a>
     <h1>{{ page.title }}</h1>
     <div class="recipe-meta">
       {% if page.serves %}<span>Serves {{ page.serves }}</span>{% endif %}

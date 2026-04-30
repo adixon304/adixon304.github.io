@@ -388,6 +388,26 @@ p {
   text-decoration: underline;
 }
 
+.recipe-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.88rem;
+  color: #588157;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+}
+
+.recipe-back-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.recipe-back-btn:hover {
+  text-decoration: underline;
+}
+
 /* Recipe */
 .recipe .recipe-meta {
   display: flex;
