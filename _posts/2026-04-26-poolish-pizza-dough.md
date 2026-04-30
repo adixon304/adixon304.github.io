@@ -2,6 +2,7 @@
 layout: recipe
 title: "Poolish Pizza Dough"
 date: 2026-04-26
+image: /images/pizza-dough.jpg
 tags: [cooking, recipe]
 description: "A two-day poolish method that builds complex flavor and an airy, open crumb. Makes 3 twelve-inch or 2 sixteen-inch pizzas."
 serves: "3 × 12\" pizzas or 2 × 16\" pizzas"
