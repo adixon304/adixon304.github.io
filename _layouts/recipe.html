@@ -50,6 +50,9 @@ layout: default
       {% if page.meal_type %}<span class="tag tag-meal">{{ page.meal_type }}</span>{% endif %}
       {% for d in page.dietary %}<span class="tag tag-dietary">{{ d }}</span>{% endfor %}
     </div>
+    {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="recipe-hero-image">
+    {% endif %}
   </header>
 
   {% if page.ingredient_groups %}

@@ -4,7 +4,7 @@ title: Southern Mustard Coleslaw
 description: "Creamy, tangy Southern slaw with the bold pop of whole grain mustard — perfect alongside BBQ or grilled meats."
 date: 2026-04-29
 cuisine: American
-meal_type: Snack
+meal_type: Side
 dietary: [Vegetarian, Gluten-Free, Make-Ahead]
 serves: 6
 time: "25 min + 1 hr chill"
