@@ -3,5 +3,7 @@ description: Engineering leader at Stripe.
 url: https://alexdixon.me
 baseurl: ""
 
+permalink: /recipes/:slug
+
 plugins:
   - jekyll-sitemap
