@@ -1,8 +1,9 @@
 ---
 layout: recipe
 title: "Light & Fluffy Belgian Waffles"
+redirect_from: /2026/04/26/belgian-waffles/
 date: 2026-04-26
-image: /images/belgian-waffles.jpg
+image: /images/recipes/belgian-waffles.jpg
 tags: [cooking, recipe]
 description: "Crisp on the outside, cloud-like on the inside. The secret is whipped egg whites folded in at the end."
 serves: "4–6 waffles"

@@ -7,3 +7,4 @@ permalink: /recipes/:slug
 
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
