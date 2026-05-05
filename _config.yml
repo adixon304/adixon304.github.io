@@ -5,6 +5,10 @@ baseurl: ""
 
 permalink: /recipes/:slug
 
+exclude:
+  - CLAUDE.md
+  - README.md
+
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
