@@ -27,26 +27,17 @@ ingredients:
   - 1 tsp vanilla extract
 ---
 
-Preheat waffle iron to medium-high. A hot iron is what gives you that crispy exterior.
+1. **Preheat:** Preheat waffle iron to medium-high. A hot iron is what gives you that crispy exterior.
+2. **Mix dry ingredients:** Whisk together flour, baking powder, sugar, and salt in a large bowl.
+3. **Mix wet ingredients:** Whisk egg yolks, milk, melted butter, and vanilla in a separate bowl until combined.
+4. **Combine wet and dry:** Pour wet into dry and stir until just combined. A few lumps are fine. Don't overmix.
+5. **Whip egg whites:** Beat reserved egg whites on high speed until stiff peaks form, about 2–3 minutes.
+6. **Fold in whites:** Gently fold whipped egg whites into the batter in two additions using a spatula, keeping as much air as possible.
+7. **Cook waffles:** Grease iron lightly, pour about ¾ cup batter per waffle, cook until golden and steam slows, about 4–5 minutes.
+8. **Keep warm & serve:** Place finished waffles on the rack of a 200°F oven to keep warm and crispy. Never stack them. They'll steam and go soggy.
 
-Mix dry ingredients: whisk together flour, baking powder, sugar, and salt in a large bowl.
+### Notes
 
-Mix wet ingredients: whisk egg yolks, milk, melted butter, and vanilla in a separate bowl until combined.
-
-Combine wet and dry: pour wet into dry and stir until just combined. A few lumps are fine. Don't overmix.
-
-Whip egg whites: beat reserved egg whites on high speed until stiff peaks form, about 2–3 minutes.
-
-Fold in whites: gently fold whipped egg whites into the batter in two additions using a spatula, keeping as much air as possible.
-
-Cook waffles: grease iron lightly, pour about ¾ cup batter per waffle, cook until golden and steam slows, about 4–5 minutes.
-
-Keep warm & serve: place finished waffles on the rack of a 200°F oven to keep warm and crispy. Never stack them. They'll steam and go soggy.
-
----
-
-**Toppings:** Fresh strawberries + whipped cream, maple syrup + butter, or Nutella + banana are all great options.
-
-**Make ahead:** Separate the eggs and mix the dry ingredients the night before to speed up morning prep.
-
-**Leftovers:** Waffles freeze well. Reheat in a toaster for crispy results.
+- **Toppings:** Fresh strawberries + whipped cream, maple syrup + butter, or Nutella + banana are all great options.
+- **Make ahead:** Separate the eggs and mix the dry ingredients the night before to speed up morning prep.
+- **Leftovers:** Waffles freeze well. Reheat in a toaster for crispy results.

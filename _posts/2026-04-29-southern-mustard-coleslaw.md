@@ -33,7 +33,7 @@ ingredients:
 
 ---
 
-**Notes**
+### Notes
 
 - For extra mustard punch, bump up to 3 tbsp whole grain mustard.
 - A mix of green and red cabbage adds nice color.

@@ -35,9 +35,7 @@ ingredients:
 3. **Grill:** Set up the Kamado Joe for direct heat at 375–400°F. Grill chicken thighs 6–7 minutes per side, or breasts 5–6 minutes per side, until internal temp reaches 165°F.
 4. **Expect some char:** The yogurt coating will char slightly. That's desirable and adds flavor. Don't pull it early.
 
----
-
-**Notes**
+### Notes
 
 - Works best with bone-in, skin-on thighs for the most flavor and forgiveness on the grill.
 - An overnight marinade makes a noticeable difference in depth of flavor.

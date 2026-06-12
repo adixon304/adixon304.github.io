@@ -26,17 +26,15 @@ ingredients:
 
 Five ingredients, five minutes of work, and by morning you've got a jar of bright, tangy pickled onions that make everything better. Keep a batch in the fridge at all times.
 
-1. Slice the onion as thin as you can — a mandoline is ideal, but a sharp knife works fine.
-2. Pack the slices into a jar or container.
-3. Combine the vinegar, hot water, sugar, and salt in a measuring cup and stir until dissolved.
-4. Pour the brine over the onions, making sure they're fully submerged.
-5. Cover and refrigerate overnight. They'll be ready in the morning and keep for up to three weeks.
+1. **Slice:** Slice the onion as thin as you can. A mandoline is ideal, but a sharp knife works fine.
+2. **Pack:** Pack the slices into a jar or container.
+3. **Make the brine:** Combine the vinegar, hot water, sugar, and salt in a measuring cup and stir until dissolved.
+4. **Pour:** Pour the brine over the onions, making sure they're fully submerged.
+5. **Chill:** Cover and refrigerate overnight. They'll be ready in the morning and keep for up to three weeks.
 
----
+### Notes
 
-**Notes**
-
-- Overnight is the move — the onions mellow out and the brine really comes together after a full night in the fridge.
+- Overnight is the move. The onions mellow out and the brine really comes together after a full night in the fridge.
 - Want to mix it up? Toss in a smashed garlic clove or a pinch of red pepper flakes before adding the brine. Both are worth trying.
 - This recipe doubles easily. Just make sure your onions stay fully submerged.
-- Works with any thin-skinned onion — shallots are especially good.
+- Works with any thin-skinned onion. Shallots are especially good.
