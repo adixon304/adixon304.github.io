@@ -112,6 +112,11 @@ nav {
   align-items: center;
   text-decoration: none;
   color: var(--text);
+  transition: color 0.15s;
+}
+
+.nav-logo:hover {
+  color: var(--accent-text);
 }
 
 .nav-logo svg {
