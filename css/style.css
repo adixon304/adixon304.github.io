@@ -508,6 +508,24 @@ p {
   color: var(--text-secondary);
 }
 
+.principles {
+  list-style: none;
+  margin: 0 0 2.5rem;
+  padding: 0;
+}
+
+.principles li {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.principles strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* Career timeline */
 .timeline {
   list-style: none;
