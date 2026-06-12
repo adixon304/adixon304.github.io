@@ -732,7 +732,105 @@ p {
   font-size: 1.05rem;
   line-height: 1.85;
   color: var(--text-secondary);
+}
+
+.recipe-steps h3,
+.recipe-ingredients h3 {
+  font-size: 1.15rem;
+  color: var(--text);
+  margin: 2.25rem 0 0.9rem;
+}
+
+.recipe-ingredients h3 {
+  margin-top: 1.5rem;
+}
+
+.recipe-steps ol {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.recipe-steps ol > li {
   counter-increment: step;
+  position: relative;
+  padding-left: 2.9rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.recipe-steps ol > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.18em;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.recipe-steps li strong {
+  color: var(--text);
+}
+
+.recipe-steps ul {
+  padding-left: 1.2rem;
+  margin: 0 0 1.5rem;
+}
+
+.recipe-steps ul li {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.recipe-steps ul li::marker {
+  color: var(--accent-text);
+}
+
+.recipe-steps ol ul {
+  margin: 0.6rem 0 0;
+}
+
+.recipe-steps table {
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.recipe-steps th,
+.recipe-steps td {
+  text-align: left;
+  padding: 0.45rem 1.5rem 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.recipe-steps th {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+}
+
+.recipe-steps hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
 }
 
 /* 404 */
@@ -1210,6 +1308,16 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   .form-success {
     max-width: 100%;
   }
+
+  .recipe-steps ol > li {
+    padding-left: 2.4rem;
+  }
+
+  .recipe-steps ol > li::before {
+    width: 24px;
+    height: 24px;
+    font-size: 0.78rem;
+  }
 }
 
 @media print {
@@ -1277,6 +1385,24 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   .recipe-steps p {
     font-size: 10.5pt;
     margin-bottom: 0.75rem;
+  }
+
+  .recipe-steps ol > li,
+  .recipe-steps ul li {
+    font-size: 10.5pt;
+    margin-bottom: 0.5rem;
+  }
+
+  .recipe-steps ol > li {
+    padding-left: 1.5rem;
+  }
+
+  .recipe-steps ol > li::before {
+    background: none;
+    color: #000;
+    width: auto;
+    height: auto;
+    content: counter(step) ".";
   }
 
   a[href]::after {
