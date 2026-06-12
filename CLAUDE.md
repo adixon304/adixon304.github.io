@@ -21,19 +21,18 @@ Commit often — especially for bug fixes, make a new commit per fix rather than
 
 ## Design Intent
 
-The aesthetic is intentionally minimal. Do not add decorative elements, shadows, gradients, or visual complexity.
+Minimal, editorial aesthetic. Sage green `#588157` is the accent color on a neutral background — not a background fill. Restraint still applies: no decorative flourishes, heavy shadows, or gradients.
 
-- **Background:** sage green `#588157`
-- **Text:** white `#fff`
-- **Font:** Helvetica
-- **Layout:** CSS Grid, 2 equal columns, full-viewport centering (`place-items: center; height: 100vh`)
-
-Do not change the color palette or introduce JavaScript or additional libraries beyond Jekyll.
+- **Design tokens:** all colors, fonts, and radii are CSS custom properties in `:root` at the top of `css/style.css`. Always use tokens, never hardcoded colors. Dark theme is a single `html[data-theme="dark"]` token-override block; it follows `prefers-color-scheme` until the nav toggle stores a choice in localStorage.
+- **Typography:** Newsreader (headings, prose) + Inter (nav, buttons, tags, meta), loaded from Google Fonts with Georgia/Helvetica fallbacks.
+- **Nav:** fixed frosted bar (translucent + backdrop-blur, hairline border) with the "AD" monogram as an inline `currentColor` SVG (`_includes/logo.svg`).
+- **JavaScript:** keep it minimal and vanilla — theme toggle, recipe search/filters, and the Formspree contact form are the only scripts. No frameworks or new libraries.
+- **Motion:** subtle only (hover lifts, hero entrance fade). Anything animated must respect `prefers-reduced-motion`.
 
 ## Content Structure
 
-Single page with two columns:
-- **Left:** profile image
-- **Right:** name (`h1`), title/employer (`h2`), short bio (`p`)
-
-Content is currently hardcoded in `index.html`. With Jekyll, it will move to `_config.yml` or front matter.
+- **Home** (`index.html`): full-viewport hero — name, tagline, buttons to About and Recipes.
+- **About** (`about/index.html`): bio with floated headshot (`images/headshot.webp`).
+- **Recipes** (`recipes/index.html`): 3 featured cards + searchable/filterable list. Recipes are posts in `_posts/` using the `recipe` layout (ingredients/steps in front matter + body, JSON-LD schema emitted automatically). Recipe images live in `images/recipes/`, compressed to ≤1600px wide / ~200-300KB.
+- **Contact** (`contact/index.html`): Formspree-backed form.
+- Shared chrome in `_includes/` (nav, footer, logo) and `_layouts/`.
