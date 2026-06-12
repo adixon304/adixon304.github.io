@@ -1,4 +1,6 @@
-# Shown in the home-page "Currently" snippet. Edit freely; keep items short.
+# Shown in the home-page "Currently" ticker. Edit freely; keep items short.
+# The ticker animation is tuned for exactly 3 items. If you add or remove
+# one, update the "ticker" keyframes in css/style.css to match.
 updated: 2026-06-11
 items:
   - label: Roasting

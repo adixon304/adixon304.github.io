@@ -19,8 +19,14 @@ description: "Alex Dixon — engineering leader at Stripe, cook, coffee roaster,
     </a>
   </div>
   <div class="hero-currently">
-    {% for item in site.data.currently.items %}
-    <p><span class="currently-label">{{ item.label }}</span>{{ item.text }}</p>
-    {% endfor %}
+    <div class="currently-ticker">
+      <ul>
+        {% for item in site.data.currently.items %}
+        <li><span class="currently-label">{{ item.label }}</span>{{ item.text }}</li>
+        {% endfor %}
+        {% assign first_item = site.data.currently.items | first %}
+        <li aria-hidden="true"><span class="currently-label">{{ first_item.label }}</span>{{ first_item.text }}</li>
+      </ul>
+    </div>
   </div>
 </section>
