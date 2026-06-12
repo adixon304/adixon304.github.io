@@ -167,11 +167,12 @@ nav {
 }
 
 .hero-avatar {
-  width: 64px;
-  height: 64px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1.5rem;
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--accent);
 }
 
 .hero h1 {
@@ -1338,6 +1339,11 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 
   .hero h1 {
     font-size: 2.4rem;
+  }
+
+  .hero-avatar {
+    width: 80px;
+    height: 80px;
   }
 
   .currently-ticker li {
