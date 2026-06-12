@@ -6,6 +6,11 @@ date: 2026-04-26
 image: /images/recipes/butter-chicken.jpg
 tags: [cooking, recipe]
 description: "A classic North Indian recipe with tandoor-style marinated chicken in a rich, velvety tomato-cream sauce. Mild, aromatic, and deeply flavorful, with an extra-generous sauce."
+# TODO: rewrite this story in your own words
+story: >-
+  This started as an attempt to stop ordering takeout butter chicken and
+  turned into the version we like better. The sauce is generous here on
+  purpose. You'll want all of it for the rice.
 serves: 4
 time: "45 min + 2 hrs marinating"
 cuisine: Indian

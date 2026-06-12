@@ -6,6 +6,11 @@ date: 2026-04-26
 image: /images/recipes/pizza-dough.jpg
 tags: [cooking, recipe]
 description: "A two-day poolish method that builds complex flavor and an airy, open crumb. Makes 3 twelve-inch or 2 sixteen-inch pizzas."
+# TODO: rewrite this story in your own words
+story: >-
+  My wife is Italian, so pizza dough gets taken seriously in our house. A
+  poolish means starting two days out, but it builds a flavor that same-day
+  dough never finds.
 serves: "3 × 12\" pizzas or 2 × 16\" pizzas"
 time: "2 days"
 cuisine: Italian

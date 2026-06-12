@@ -3,6 +3,11 @@ layout: recipe
 title: Southern Mustard Coleslaw
 redirect_from: /2026/04/29/southern-mustard-coleslaw/
 description: "Creamy, tangy Southern slaw with the bold pop of whole grain mustard — perfect alongside BBQ or grilled meats."
+# TODO: rewrite this story in your own words
+story: >-
+  I lean southern with my cooking, and this is the slaw I make when something
+  is coming off the smoker. The whole grain mustard gives it a pop that
+  creamy slaws miss.
 date: 2026-04-29
 image: /images/recipes/coleslaw.jpg
 cuisine: American

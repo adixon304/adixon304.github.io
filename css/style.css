@@ -690,6 +690,13 @@ p {
   color: var(--text-faint);
 }
 
+.recipe-story {
+  font-size: 1.12rem;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
 .recipe-ingredients,
 .recipe-steps {
   margin-top: 2rem;

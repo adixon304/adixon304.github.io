@@ -3,6 +3,10 @@ layout: recipe
 title: Easy Pickled Red Onions
 redirect_from: /2026/04/29/easy-pickled-red-onions/
 description: "A dead-simple pickled red onion recipe that goes with everything — BBQ, tacos, salads, and more. Just five ingredients and a night in the fridge."
+# TODO: rewrite this story in your own words
+story: >-
+  There's almost always a jar of these going in our fridge. They started as a
+  topping for barbecue and now they end up on nearly everything we eat.
 date: 2026-04-29
 image: /images/recipes/easy-pickled-red-onions.jpg
 image_alt: "Overhead view of thinly sliced pickled red onions submerged in bright pink brine inside a glass jar."

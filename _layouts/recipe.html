@@ -55,6 +55,10 @@ layout: default
     {% endif %}
   </header>
 
+  {% if page.story %}
+  <p class="recipe-story">{{ page.story }}</p>
+  {% endif %}
+
   {% if page.ingredient_groups %}
   <section class="recipe-ingredients">
     <h2>Ingredients</h2>

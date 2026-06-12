@@ -6,6 +6,11 @@ date: 2026-04-26
 image: /images/recipes/belgian-waffles.jpg
 tags: [cooking, recipe]
 description: "Crisp on the outside, cloud-like on the inside. The secret is whipped egg whites folded in at the end."
+# TODO: rewrite this story in your own words
+story: >-
+  These are the waffles that get requested on slow weekend mornings. Whipping
+  the egg whites feels fussy the first time, but it's the whole trick, so
+  don't skip it.
 serves: "4–6 waffles"
 time: "~30 minutes"
 cuisine: American
