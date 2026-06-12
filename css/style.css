@@ -60,6 +60,42 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(88, 129, 87, 0.3);
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 200;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 var(--radius) var(--radius);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -249,12 +285,17 @@ nav {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: border-color 0.15s, box-shadow 0.15s;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .featured-card:hover {
   border-color: var(--accent);
   box-shadow: var(--card-shadow);
+  transform: translateY(-2px);
+}
+
+.featured-card-image {
+  overflow: hidden;
 }
 
 .featured-card-image img {
@@ -262,6 +303,11 @@ nav {
   height: 180px;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover .featured-card-image img {
+  transform: scale(1.03);
 }
 
 .featured-card-placeholder {
@@ -869,8 +915,14 @@ html[data-theme="dark"] .filter-select {
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 1.5rem 0;
-  transition: opacity 0.1s;
+  padding: 1.5rem 1rem;
+  margin: 0 -1rem;
+  border-radius: var(--radius);
+  transition: background-color 0.15s;
+}
+
+.recipe-card-link:hover {
+  background-color: var(--accent-soft);
 }
 
 .recipe-card-link:hover .recipe-card-body h2 {
