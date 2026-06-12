@@ -31,8 +31,12 @@ Minimal, editorial aesthetic. Sage green `#588157` is the accent color on a neut
 
 ## Content Structure
 
-- **Home** (`index.html`): full-viewport hero — name, tagline, buttons to About and Recipes.
-- **About** (`about/index.html`): bio with floated headshot (`images/headshot.webp`).
-- **Recipes** (`recipes/index.html`): 3 featured cards + searchable/filterable list. Recipes are posts in `_posts/` using the `recipe` layout (ingredients/steps in front matter + body, JSON-LD schema emitted automatically). Recipe images live in `images/recipes/`, compressed to ≤1600px wide / ~200-300KB.
+- **Home** (`index.html`): full-viewport hero — avatar, name, tagline, buttons, and a "Currently" snippet. Currently items live in `_data/currently.yml`; edit that file (not the markup) to update them.
+- **About** (`about/index.html`): bio with floated headshot, career timeline (`.timeline`), "How I work" principles, and a candid photo strip (placeholders until real photos land in `images/about/`).
+- **Recipes** (`recipes/index.html`): 3 featured cards + searchable/filterable list. Recipes are posts in `_posts/` using the `recipe` layout (ingredients/steps in front matter + body, JSON-LD schema emitted automatically). An optional `story` front-matter field renders as a personal headnote above the ingredients. Recipe images live in `images/recipes/`, compressed to ≤1600px wide / ~200-300KB.
 - **Contact** (`contact/index.html`): Formspree-backed form.
 - Shared chrome in `_includes/` (nav, footer, logo) and `_layouts/`.
+
+## Voice & Copy Rules
+
+Site copy is Alex's voice. Never use em dashes in copy. Avoid AI-sounding prose (no "delve", no triadic flourishes, no marketing cadence). Any copy drafted by Claude must be flagged for Alex's review before pushing; prefer keeping his phrasing when shaping text he provided.
