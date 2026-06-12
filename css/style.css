@@ -138,7 +138,7 @@ nav {
 
 /* Hero */
 .hero {
-  height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,7 +184,7 @@ nav {
   text-decoration: none;
   background-color: var(--accent);
   color: #fff;
-  transition: opacity 0.15s;
+  transition: background-color 0.15s, transform 0.15s;
 }
 
 .hero-btn svg {
@@ -194,7 +194,8 @@ nav {
 }
 
 .hero-btn:hover {
-  opacity: 0.85;
+  background-color: color-mix(in srgb, var(--accent), #000 12%);
+  transform: translateY(-1px);
   color: #fff;
 }
 
@@ -205,7 +206,31 @@ nav {
 }
 
 .hero-btn-outline:hover {
+  background-color: var(--accent-soft);
   color: var(--accent-text);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1,
+  .hero .tagline,
+  .hero-links {
+    animation: hero-in 0.6s ease both;
+  }
+
+  .hero .tagline {
+    animation-delay: 0.1s;
+  }
+
+  .hero-links {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes hero-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
 }
 
 /* Featured recipe cards (top of Recipes page) */
@@ -295,10 +320,6 @@ main {
   max-width: 760px;
   margin: 0 auto;
   padding: 8rem 2.5rem 4rem;
-}
-
-body.home {
-  overflow: hidden;
 }
 
 body.home main {
