@@ -157,6 +157,14 @@ nav {
   padding: 5.5rem 2.5rem 0 8%;
 }
 
+.hero-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
 .hero h1 {
   font-size: clamp(2.8rem, 6vw, 5rem);
   font-weight: 500;
@@ -219,19 +227,54 @@ nav {
   color: var(--accent-text);
 }
 
+.hero-currently {
+  margin-top: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.hero-currently p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.currently-label {
+  display: inline-block;
+  min-width: 5.5rem;
+  margin-right: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-text);
+}
+
 @media (prefers-reduced-motion: no-preference) {
+  .hero-avatar,
   .hero h1,
   .hero .tagline,
-  .hero-links {
+  .hero-links,
+  .hero-currently {
     animation: hero-in 0.6s ease both;
   }
 
+  .hero h1 {
+    animation-delay: 0.08s;
+  }
+
   .hero .tagline {
-    animation-delay: 0.1s;
+    animation-delay: 0.16s;
   }
 
   .hero-links {
-    animation-delay: 0.2s;
+    animation-delay: 0.24s;
+  }
+
+  .hero-currently {
+    animation-delay: 0.32s;
   }
 
   @keyframes hero-in {
