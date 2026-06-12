@@ -1,7 +1,6 @@
 <nav>
   <a href="{{ '/' | relative_url }}" class="nav-logo" aria-label="Alex Dixon — home">
     {% include logo.svg %}
-    <span class="nav-wordmark">Alex Dixon</span>
   </a>
   <div class="nav-links">
     <a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="nav-active"{% endif %}>About</a>
