@@ -452,6 +452,40 @@ p {
   clear: both;
 }
 
+.about-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2.5rem 0 1rem;
+  clear: both;
+}
+
+.about-photos figure {
+  margin: 0;
+}
+
+.about-photos img,
+.about-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.about-photo-placeholder {
+  background-color: var(--accent-soft);
+  border: 1px dashed var(--border);
+}
+
+.about-photos figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 .about h1 {
   font-size: 2.5rem;
   color: var(--accent-text);
@@ -1049,6 +1083,15 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   .about-photo img {
     width: 160px;
     height: 160px;
+  }
+
+  .about-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photos img,
+  .about-photo-placeholder {
+    aspect-ratio: 3 / 2;
   }
 
   nav {
