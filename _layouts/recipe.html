@@ -51,7 +51,7 @@ layout: default
       {% for d in page.dietary %}<span class="tag tag-dietary">{{ d }}</span>{% endfor %}
     </div>
     {% if page.image %}
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="recipe-hero-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" class="recipe-hero-image">
     {% endif %}
   </header>
 
