@@ -1098,12 +1098,12 @@ footer a:hover {
 }
 
 .recipe-hero-image {
-  width: 100%;
-  aspect-ratio: 5 / 2;
-  max-height: 320px;
-  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  width: auto;
+  max-height: 480px;
+  margin: 1.25rem auto 0;
   border-radius: var(--radius);
-  margin-top: 1.25rem;
 }
 
 /* Recipes listing page */
