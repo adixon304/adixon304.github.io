@@ -2,7 +2,7 @@
 layout: recipe
 title: Yogurt Marinade for Grilled Chicken
 redirect_from: /2026/04/29/yogurt-marinade-grilled-chicken/
-description: "Mediterranean/tandoori-style marinade with bright citrus and warm spices — great for thighs or breasts on the Kamado Joe."
+description: "Mediterranean/tandoori-style marinade with bright citrus and warm spices, great for thighs or breasts on the Kamado Joe."
 # TODO: rewrite this story in your own words
 story: >-
   Yogurt does something to chicken that a regular marinade can't. I run these
